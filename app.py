@@ -11,15 +11,14 @@ Usage:
     python app.py --interactive
 """
 
-import json
-import sys
 import argparse
+import json
 import logging
+import sys
 from pathlib import Path
 from typing import Any
 
 import joblib
-import numpy as np
 import pandas as pd
 
 # ── Logging ───────────────────────────────────────────────────────────────────

@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![License](https://img.shields.io/badge/License-Not%20Specified-lightgrey)](https://github.com/tracolerd/Phishing-Email-Classifier)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A practical cybersecurity + machine learning project that combines **natural-language email analysis** with **simple security-oriented metadata** to classify an email as either **PHISHING** or **LEGITIMATE**.
 
@@ -312,7 +312,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The project currently depends on Scikit-learn, Joblib, Pandas, NumPy, BeautifulSoup, and lxml. fileciteturn6file0
+For development and validation, install the additional test, lint, and
+dependency-audit tools:
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+The project supports Python 3.9 and newer. CI validates Python 3.9 through
+3.12.
+
+The project currently depends on Scikit-learn, Joblib, Pandas, NumPy, BeautifulSoup, and lxml.
 
 ---
 
@@ -484,6 +494,20 @@ update billing
 
 These explanations are **heuristic summaries** intended to make the result easier to interpret. They are not an exact feature-attribution method such as SHAP or LIME.
 
+## Maintenance checks
+
+Run the local checks used by CI:
+
+```bash
+python -m ruff check app.py data src tests
+python -m compileall -q app.py data src tests
+python -m pytest -q
+python -m pip_audit -r requirements.txt
+```
+
+The CI workflow uses a temporary model workspace for its training smoke check;
+it does not intentionally update the tracked dataset or serialized model.
+
 ---
 
 ## 🏗️ Design Decisions
@@ -629,7 +653,7 @@ When integrating real email data:
 | **Joblib** | Model/pipeline serialization |
 | **CLI + JSON** | Lightweight inference interface |
 
-Dependency requirements are maintained in `requirements.txt`. fileciteturn6file0
+Runtime dependency requirements are maintained in `requirements.txt`, while development and validation tools are listed in `requirements-dev.txt`.
 
 ---
 

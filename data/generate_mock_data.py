@@ -367,7 +367,7 @@ def main() -> None:
     print(f"  Phishing  (1)   : {phishing_count}  ({phishing_count / len(df) * 100:.1f}%)")
     print(f"  Legitimate (0)  : {legitimate_count} ({legitimate_count / len(df) * 100:.1f}%)")
     print(f"{'='*54}")
-    print(f"\n  Mean Feature Values by Class:")
+    print("\n  Mean Feature Values by Class:")
     summary = df.groupby("label")[["url_count", "has_attachments", "spf_fail"]].mean()
     summary.index = ["Legitimate (0)", "Phishing (1)"]
     print(summary.round(3).to_string())

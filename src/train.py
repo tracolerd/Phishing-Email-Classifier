@@ -9,21 +9,21 @@ Usage:
     python -m src.train
 """
 
-import sys
 import logging
+import sys
 from pathlib import Path
 
 import joblib
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from src.preprocess import TextCleanerTransformer, HeuristicsExtractorTransformer
+from src.preprocess import HeuristicsExtractorTransformer, TextCleanerTransformer
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")

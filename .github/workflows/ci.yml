@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
+
+      - name: Lint
+        run: python -m ruff check app.py data src tests
+
+      - name: Compile Python sources
+        run: python -m compileall -q app.py data src tests
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Audit runtime dependencies
+        run: python -m pip_audit -r requirements.txt
+
+      - name: Verify training and CLI smoke path
+        run: |
+          python -m src.train
+          python app.py --json '{"subject":"Verify now","body":"Click http://evil.test","url_count":5,"has_attachments":1,"spf_fail":1}'

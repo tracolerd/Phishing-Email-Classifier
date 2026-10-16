@@ -1,4 +1,6 @@
-# 🛡️ Phishing Email Classifier
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A1022,50:9F1239,100:0B1220&height=190&section=header&text=Phishing%20Email%20Classifier&fontSize=42&fontColor=F1F5F9&fontAlignY=38&animation=fadeIn&desc=A%20scikit-learn%20pipeline%20for%20email%20content%20classification&descAlignY=61&descSize=15" alt="Phishing Email Classifier animated project banner" width="100%" />
+</p>
 
 > A modular machine-learning pipeline for identifying potentially phishing emails from message content and lightweight email-security heuristics.
 
@@ -688,3 +690,12 @@ The core idea is simple but important: **phishing detection is stronger when mul
 ---
 
 > ⚠️ **Disclaimer:** This project is provided for educational, research, and defensive-security purposes. It should not be treated as a standalone replacement for enterprise email-security controls, threat intelligence, sandboxing, or human security review.
+
+---
+
+## Author & Development
+
+**Project author and solo developer:** [Nurul Faiyaz](https://github.com/tracolerd).
+
+This project is independently developed and maintained by Nurul Faiyaz. AI-assisted tools may be used as part of the development workflow; the project author remains responsible for technical decisions, code review, validation, and maintenance.
+

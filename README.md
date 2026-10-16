@@ -1,6 +1,8 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A1022,50:9F1239,100:0B1220&height=190&section=header&text=Phishing%20Email%20Classifier&fontSize=42&fontColor=F1F5F9&fontAlignY=38&animation=fadeIn&desc=A%20scikit-learn%20pipeline%20for%20email%20content%20classification&descAlignY=61&descSize=15" alt="Phishing Email Classifier animated project banner" width="100%" />
 </p>
+<h1 align="center">Phishing Email Classifier</h1>
+
 
 > A modular machine-learning pipeline for identifying potentially phishing emails from message content and lightweight email-security heuristics.
 

@@ -1,22 +1,28 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A1022,50:9F1239,100:0B1220&height=190&section=header&text=Phishing%20Email%20Classifier&fontSize=42&fontColor=F1F5F9&fontAlignY=38&animation=fadeIn&desc=A%20scikit-learn%20pipeline%20for%20email%20content%20classification&descAlignY=61&descSize=15" alt="Phishing Email Classifier animated project banner" width="100%" />
+  <img src="assets/readme-hero.svg" alt="Phishing Email Classifier — custom animated project banner" width="100%" />
 </p>
+
 <h1 align="center">Phishing Email Classifier</h1>
 
+<p align="center">
+  <strong>Make suspicious email signals easier to explain.</strong><br/>
+  A modular scikit-learn pipeline that combines email text with lightweight security heuristics to classify messages as phishing or legitimate.
+</p>
 
-> A modular machine-learning pipeline for identifying potentially phishing emails from message content and lightweight email-security heuristics.
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-Pipeline-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python — Pipeline" /></a>
+  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit-learn-Machine_learning-F7931E?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=white" alt="scikit-learn — Machine learning" /></a>
+  <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-Data_prep-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white" alt="Pandas — Data prep" /></a>
+  <a href="https://github.com/tracolerd/Phishing-Email-Classifier"><img src="https://img.shields.io/badge/Model_pipeline-Explainable_signals-BE123C?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Model pipeline — Explainable signals" /></a>
+</p>
 
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![License](https://img.shields.io/badge/License-Not%20Specified-lightgrey)](https://github.com/tracolerd/Phishing-Email-Classifier)
-
-A practical cybersecurity + machine learning project that combines **natural-language email analysis** with **simple security-oriented metadata** to classify an email as either **PHISHING** or **LEGITIMATE**.
-
-The project is built around a reusable Scikit-learn pipeline, custom preprocessing transformers, a Random Forest classifier, a serialized model artifact, and a command-line inference application that returns structured JSON results.
+<p align="center">
+  <a href="#project-details">Contents</a> · <a href="#project-setup">Install / run</a> · <a href="#project-architecture">Pipeline</a> · <a href="#project-limitations">Limitations</a> · <a href="#creator-developer-maintainer">Creator</a>
+</p>
 
 ---
 
+<a id="project-details"></a>
 ## 📌 Table of Contents
 
 - [Overview](#-overview)
@@ -95,6 +101,7 @@ This makes the project a useful demonstration of how **cybersecurity signals and
 
 ---
 
+<a id="project-architecture"></a>
 ## ⚙️ How It Works
 
 At a high level, the system follows this flow:
@@ -285,6 +292,7 @@ Phishing-Email-Classifier/
 
 ---
 
+<a id="project-setup"></a>
 ## 🚀 Installation
 
 ### 1. Clone the repository
@@ -516,6 +524,7 @@ Random seeds are fixed at `42` for synthetic data generation and model training/
 
 ---
 
+<a id="project-limitations"></a>
 ## ⚠️ Limitations
 
 This project is best understood as a **research/portfolio-style defensive ML prototype**, not a complete enterprise email-security gateway.
@@ -686,20 +695,20 @@ The core idea is simple but important: **phishing detection is stronger when mul
 ---
 ---
 
+---
+
 ## Creator, Developer & Maintainer
 
-**Created, designed, developed, and maintained by [Nurul Faiyaz](https://github.com/tracolerd).**
-
-This project is independently built and maintained by Nurul Faiyaz. The project's design, implementation, and documentation are his work.
+**Created, designed, developed, documented, and maintained independently by [Nurul Faiyaz](https://github.com/tracolerd).**
 
 <p align="center">
-  <a href="https://www.facebook.com/faiyaz.888"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
-  <a href="https://www.instagram.com/tracolerd"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-  <a href="https://www.linkedin.com/in/faiyaz-xyz"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://x.com/faiyaz_explores"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://github.com/tracolerd"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="mailto:scrollfaiyaz@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://nurul-faiyaz.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-0F766E?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Personal website" /></a>
+  <a href="https://www.facebook.com/faiyaz.888"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white" alt="Facebook" /></a>
+  <a href="https://www.instagram.com/tracolerd"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram" /></a>
+  <a href="https://www.linkedin.com/in/faiyaz-xyz"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/faiyaz_explores"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white" alt="X" /></a>
+  <a href="https://github.com/tracolerd"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:scrollfaiyaz@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email" /></a>
+  <a href="https://nurul-faiyaz.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-0F766E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Website" /></a>
 </p>
 
 <p align="center">
@@ -711,3 +720,7 @@ This project is independently built and maintained by Nurul Faiyaz. The project'
   <a href="mailto:scrollfaiyaz@gmail.com">Email</a> ·
   <a href="https://nurul-faiyaz.netlify.app/">Website</a>
 </p>
+
+## License
+
+See [LICENSE](LICENSE) for the license terms.

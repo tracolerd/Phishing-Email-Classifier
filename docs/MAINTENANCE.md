@@ -7,3 +7,4 @@
 - [2026-10-27 19:56:14 UTC] Release readiness and documentation audit checkpoint #90
 - [2026-10-27 20:15:53 UTC] Release readiness and documentation audit checkpoint #102
 - [2026-10-27 20:22:16 UTC] Release readiness and documentation audit checkpoint #114
+- [2026-10-27 20:28:36 UTC] Release readiness and documentation audit checkpoint #126

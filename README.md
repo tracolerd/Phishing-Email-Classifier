@@ -724,3 +724,7 @@ The core idea is simple but important: **phishing detection is stronger when mul
 ## License
 
 See [LICENSE](LICENSE) for the license terms.
+
+---
+
+<p align="center"><sub>Portfolio catalog · Project 01 of 22 · <a href="https://github.com/tracolerd">Nurul Faiyaz</a></sub></p>

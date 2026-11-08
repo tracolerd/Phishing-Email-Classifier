@@ -26,3 +26,4 @@
 - [2026-11-06 12:09:55 UTC] Release readiness and documentation audit checkpoint #330
 - [2026-11-08 07:20:50 UTC] Release readiness and documentation audit checkpoint #342
 - [2026-11-08 07:38:10 UTC] Release readiness and documentation audit checkpoint #354
+- [2026-11-08 07:49:46 UTC] Automated release readiness & telemetry audit checkpoint #366
